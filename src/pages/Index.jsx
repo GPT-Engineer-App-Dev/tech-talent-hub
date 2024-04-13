@@ -1,4 +1,4 @@
-import { Box, Button, Container, Heading, Image, SimpleGrid, Stack, Text } from "@chakra-ui/react";
+import { Box, Button, Container, Heading, Image, SimpleGrid, Stack, Text, Link } from "@chakra-ui/react";
 import { FaCode, FaFilter, FaComments } from "react-icons/fa";
 
 const Index = () => {
@@ -13,7 +13,7 @@ const Index = () => {
           <Text fontSize="xl" mb={8}>
             Particles connects companies with skilled developers specializing in modern web technologies
           </Text>
-          <Button size="lg" colorScheme="white" variant="outline">
+          <Button as={Link} to="/developers" size="lg" colorScheme="white" variant="outline">
             View Developers
           </Button>
         </Container>
@@ -66,7 +66,7 @@ const Index = () => {
           <Heading as="h2" size="2xl" mb={6} color="white">
             Start Hiring World-Class Developers
           </Heading>
-          <Button size="lg" colorScheme="white" variant="solid">
+          <Button as={Link} to="/developers" size="lg" colorScheme="white" variant="solid">
             View Developer Listings
           </Button>
         </Container>
